@@ -211,7 +211,7 @@
 .button-save__icon {
   inline-size: 20px;
   block-size: 40px;
-  fill: #000000;
+  color: #fff;
   flex-shrink: 0;
 }
 
