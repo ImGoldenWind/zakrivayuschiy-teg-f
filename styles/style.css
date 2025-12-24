@@ -8,6 +8,7 @@
   font-family: var(--main-font), sans-serif;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--main-bg-color);
   background-image: var(--page-bg-image);
   background-attachment: fixed;
   margin: auto;
@@ -151,6 +152,8 @@
   z-index: 1;
   mix-blend-mode: difference;
   color: #fff;
+  white-space: nowrap;
+  line-height: 1;
 }
 
 .button::after {
@@ -180,14 +183,6 @@
   transition: border-color 0.3s ease;
 }
 
-.button-save {
-  display: block;
-  inline-size: var(--save-button-inline-size);
-  padding: 15px 17px;
-  margin-block: 50px 100px;
-  margin-inline: auto;
-}
-
 .button-save__content {
   display: flex;
   flex-direction: column;
@@ -199,6 +194,25 @@
   inline-size: 28px;
   block-size: 28px;
   fill: #fff;
+}
+
+.button-save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  inline-size: var(--save-button-inline-size);
+  min-block-size: 55px;
+  padding: 0 20px;
+  margin-block: 50px 100px;
+  margin-inline: auto;
+}
+
+.button-save__icon {
+  inline-size: 20px;
+  block-size: 40px;
+  fill: #fff;
+  flex-shrink: 0;
 }
 
 .dialog__content-svg-wrapper {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./svg/favicon.svg" />
-    <link rel="icoicon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -577,12 +577,14 @@
         aria-controls="save-dialog"
         class="button-save button"
       >
-        <span class="button__text button-save__content">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-            <use class="button-save-svg" href="./svg/floppy.svg"></use>
-          </svg>
-          Сохранить на память
-        </span>
+        <svg class="button-save__icon" viewBox="0 0 44 44">
+          <use
+            href="./svg/floppy.svg#floppy"
+            xlink:href="./svg/floppy.svg#floppy"
+          ></use>
+        </svg>
+
+        <span class="button__text">Сохранить на память</span>
       </button>
 
       <dialog id="save-dialog" class="dialog__save">
@@ -595,7 +597,10 @@
               width="39"
               height="39"
             >
-              <use class="dialog__content-svg" href="./svg/floppy.svg"></use>
+              <use
+                class="dialog__content-svg"
+                href="./svg/floppy.svg#floppy"
+              ></use>
             </svg>
           </div>
 
