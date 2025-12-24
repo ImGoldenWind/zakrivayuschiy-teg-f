@@ -211,7 +211,12 @@
 .button-save__icon {
   inline-size: 20px;
   block-size: 40px;
+<<<<<<< HEAD
   color: #fff;
+=======
+  fill: #000000;
+  mix-blend-mode: normal;
+>>>>>>> 0fc2951b3b3641a1656078971d9b3d39981a3a50
   flex-shrink: 0;
 }
 
