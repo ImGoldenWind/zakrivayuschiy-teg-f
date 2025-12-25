@@ -247,7 +247,6 @@
   gap: 30px;
   padding: 30px;
   border: 2px #000 solid;
-  margin-block-start: 235px;
 }
 
 .dialog__save[open] {
@@ -281,29 +280,19 @@
 }
 
 @media (width <= 375px) {
-.dialog__save {
-width: 341px;
-height: 191px;
-overflow: hidden;
-}
+  .dialog__content {
+    opacity: 1;
+    gap: 20px;
+    margin-left: 6px;
+  }
 
-.dialog__content {
-opacity: 1;
-gap: 20px;
-margin-left: 6px;
-}
-
-.dialog__button {
-  inline-size: 100%;
-  padding: 10px;
-  text-transform: uppercase;
-  bottom: 5px;
-  max-width: 261px;
-  margin-left: 5px;
-  margin-top: 2px;
-}
-
-
+  .dialog__button {
+    inline-size: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    max-width: 261px;
+    margin-left: 5px;
+  }
 }
 
 @media (min-width: 1440px) {
